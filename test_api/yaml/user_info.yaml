@@ -1,0 +1,11 @@
+case_name: 03-获取单个用户信息-成功用例
+steps:
+  - request:
+      method: GET
+      url: https://jsonplaceholder.typicode.com/users/1
+  - response:
+      status_code: 200
+      json:
+        id: 1
+  - extract:
+      user_name: [json, "$.name"]

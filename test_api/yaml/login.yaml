@@ -1,0 +1,7 @@
+case_name: 01-获取用户列表-成功用例
+steps:
+  - request:
+      method: GET
+      url: https://jsonplaceholder.typicode.com/users
+  - response:
+      status_code: 200

@@ -1,0 +1,14 @@
+case_name: 02-创建用户-成功用例
+steps:
+  - request:
+      method: POST
+      url: https://jsonplaceholder.typicode.com/users
+      json:
+        name: "测试用户"
+        username: "testuser"
+        email: "test@example.com"
+  - response:
+      status_code: 201
+      json:
+        name: "测试用户"
+        username: "testuser"

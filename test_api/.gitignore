@@ -1,0 +1,31 @@
+class my_class(object):
+    pass
+
+
+# Python
+__pycache__/
+*.pyc
+
+# pytest
+.pytest_cache/
+
+# allure
+temps/
+report/
+
+# logs
+logs/
+
+# Visual Studio
+.vs/
+*.suo
+*.user
+
+# IDE
+.idea/
+.vscode/
+
+# env
+venv/
+.env/
+

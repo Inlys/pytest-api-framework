@@ -1,0 +1,25 @@
+# 这里是接口的内容：请求、响应、返回值
+
+case_name: 登录成功用例  # 是字典，只有键：值
+steps:   # 是列表
+  - request:  # 是字典
+      method: POST
+      url: http://116.62.63.211/shop/api.php?application=app&application_client_type=weixin
+      params:
+        s: user/login
+      json: {
+        "accounts": "beifan_1105",
+        "pwd": "beifan_1105",
+        "type": "username"
+      }
+
+  - response:
+      status_code: 200
+      json:
+        code: 0
+        msg: 登录成功
+        data: 
+          username: beifan_1105
+
+  - extract:
+      token: [ json, $.data.token]
