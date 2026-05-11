@@ -7,7 +7,7 @@
 - Python
 - pytest
 - requests
-- PyYAML
+- YAML
 - Allure
 
 ## 功能
@@ -21,5 +21,4 @@
 ## 运行项目
 
 ```bash
-pip install -r requirements.txt
 python main.py
